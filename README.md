@@ -5,11 +5,11 @@ A succinct json-schema language, Convert json into json-schema.
 npm install easy-json-schema
 
 ## Usage
-
+```
 const ejs = require('easy-json-schema');
 const jsonSchema = ejs(json);
 console.log(jsonSchema);
-
+```
 ## example
 
 ### Base 
