@@ -1,0 +1,30 @@
+{
+  "name": "easy-json-schema",
+  "version": "0.0.1",
+  "description": "A succinct json-schema language, Convert json into json-schema.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suxiaoxin/easy-json-schema.git"
+  },
+  "keywords": [
+    "json",
+    "to",
+    "schema",
+    "json",
+    "schema",
+    "generator"
+  ],
+  "author": "suxiaoxin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suxiaoxin/easy-json-schema/issues"
+  },
+  "homepage": "https://github.com/suxiaoxin/easy-json-schema#readme",
+  "devDependencies": {
+    "ava": "^0.24.0"
+  }
+}
