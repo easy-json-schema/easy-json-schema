@@ -4,7 +4,8 @@
   "description": "A succinct json-schema language, Convert json into json-schema.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/ava"
+    "test": "./node_modules/.bin/ava",
+    "docs": "cp index.html docs/ && cp index.js docs/"
   },
   "repository": {
     "type": "git",
