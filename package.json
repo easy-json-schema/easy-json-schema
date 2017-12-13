@@ -1,6 +1,6 @@
 {
   "name": "easy-json-schema",
-  "version": "0.0.1",
+  "version": "0.0.1-beta",
   "description": "A succinct json-schema language, Convert json into json-schema.",
   "main": "index.js",
   "scripts": {
