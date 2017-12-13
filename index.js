@@ -3,7 +3,7 @@
     return obj ? typeof obj === 'object' && Object.getPrototypeOf(obj) === Object.prototype : false;
   }
 
-  const supportType = ['string', 'number', 'array', 'object', 'boolean'];
+  const supportType = ['string', 'number', 'array', 'object', 'boolean', 'integer'];
 
   function getType(type) {
     if (!type) type = 'string';
