@@ -113,3 +113,45 @@ test('json1', t=>{
   t.deepEqual(ejs(test1), result1);
 })
 
+test('item is number', t=>{
+  const test2 ={
+    "*id": "number",
+    "role": {
+      "type": "string",
+      "enum": ["owner", "dev", "guest"]
+    },
+    "*member_uids": {
+      "type": "array",
+      "items": "number",
+      "minItems": 1
+    }
+  }
+  const result2 = {
+    "type": "object",
+    "required": [
+      "id",
+      "member_uids"
+    ],
+    "properties": {
+      "id": {
+        "type": "number"
+      },
+      "role": {
+        "type": "string",
+        "enum": [
+          "owner",
+          "dev",
+          "guest"
+        ]
+      },
+      "member_uids": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "number"
+        }
+      }
+    }
+  }
+  t.deepEqual(ejs(test2), result2);
+})

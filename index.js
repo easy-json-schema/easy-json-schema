@@ -29,7 +29,7 @@
     if (schema.type === 'array') {
       delete schema.items;
       schema.items = {};
-      handleObject(json.items, schema.items)
+      parse(json.items, schema.items)
     }
 
   }
