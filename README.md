@@ -1,5 +1,5 @@
 # easy-json-schema
-A succinct json-schema language, Convert json into json-schema.
+A succinct json-schema language, simplify the json-schema definition.
 
 ## install
 npm install easy-json-schema
