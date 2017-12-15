@@ -17,15 +17,13 @@ Input:
 
 ```
 {
-  "id": "uk123",
-  "*name": "tom",
-  "*email": "tom@gmail.com",
-  "arr": [
-    {
-      "site": "string",
-      "url": "string"
-    }
-  ]
+  "id": "string",
+  "*name": "string",
+  "*email": "string",
+  "arr": [{
+    "site": "string",
+    "url": "string"
+  }]
 }
 
 ```
