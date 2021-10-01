@@ -6,7 +6,7 @@
   const supportType = ['string', 'number', 'array', 'object', 'boolean', 'integer'];
 
   function getType(type) {
-    if (!type&& type!== false) type = 'string';
+    if (!type&& type!== false&& type!==0) type = 'string';
     if (supportType.indexOf(type) !== -1) {
       return type;
     }
