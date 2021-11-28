@@ -43,8 +43,13 @@
 
   function handleArray(arr, schema) {
     schema.type = 'array';
-    var props = schema.items = {};
-    parse(arr[0], props)
+    var props = schema.items = [{}];
+    arr.forEach((item,index)=>{
+      if(!props[index]){
+        props[index] = {};
+      }
+      parse(arr[index],props[index]);
+    })
   }
 
   function handleObject(json, schema) {
