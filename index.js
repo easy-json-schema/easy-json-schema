@@ -6,7 +6,8 @@
   const supportType = ['string', 'number', 'array', 'object', 'boolean', 'integer'];
 
   function getType(type) {
-    if (!type) type = 'string';
+    if(typeof type === 'boolean') type = 'boolean';
+    if (null == type) type = 'string';
     if (supportType.indexOf(type) !== -1) {
       return type;
     }
@@ -34,10 +35,15 @@
 
   }
 
-  function handleArray(arr, schema) {
+ function handleArray(arr, schema) {
     schema.type = 'array';
-    var props = schema.items = {};
-    parse(arr[0], props)
+    var props = schema.items = [{}];
+    arr.forEach((item,index)=>{
+      if(!props[index]){
+        props[index] = {};
+      }
+      parse(arr[index],props[index]);
+    })
   }
 
   function handleObject(json, schema) {
